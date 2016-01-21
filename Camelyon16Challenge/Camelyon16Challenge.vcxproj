@@ -178,6 +178,7 @@
     <Import Project="..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.7.0\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets" Condition="Exists('..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.7.0\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" />
     <Import Project="..\packages\opencv3.1.redist.1.0\build\native\opencv3.1.redist.targets" Condition="Exists('..\packages\opencv3.1.redist.1.0\build\native\opencv3.1.redist.targets')" />
     <Import Project="..\packages\opencv3.1.1.0\build\native\opencv3.1.targets" Condition="Exists('..\packages\opencv3.1.1.0\build\native\opencv3.1.targets')" />
+    <Import Project="..\packages\boost.1.60.0.0\build\native\boost.targets" Condition="Exists('..\packages\boost.1.60.0.0\build\native\boost.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -192,5 +193,6 @@
     <Error Condition="!Exists('..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.7.0\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.7.0\build\native\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.targets'))" />
     <Error Condition="!Exists('..\packages\opencv3.1.redist.1.0\build\native\opencv3.1.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\opencv3.1.redist.1.0\build\native\opencv3.1.redist.targets'))" />
     <Error Condition="!Exists('..\packages\opencv3.1.1.0\build\native\opencv3.1.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\opencv3.1.1.0\build\native\opencv3.1.targets'))" />
+    <Error Condition="!Exists('..\packages\boost.1.60.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\boost.1.60.0.0\build\native\boost.targets'))" />
   </Target>
 </Project>
